@@ -2,10 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>hello world</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Tannu Nagar portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   <header id="home" class="text-white text-center py-6">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-left">
+                <h1 class="lead">Hi, I'm Tannu Nagar!<br>
+                    and Passionate about<br>
+                    <span class="subtitle">Python Development and DevOps</span>
+                </h1>
+                <a href="tannu_nagar.pdf" class="btn-download">Download Resume PDF</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="tanu.jpg" alt="Tannu Nagar" class="img-fluid rounded-circle">
+            </div>
+        </div>
+    </div>
+</header>
 
+ <section id="skills" class="text-center py-5">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="skills/html.jpg" alt="HTML Logo" class="img-fluid">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="skills/css.jpg" alt="CSS Logo" class="img-fluid">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="skills/js.jpg" alt="JavaScript Logo" class="img-fluid">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="skills/python.jpg" alt="Python Logo" class="img-fluid">
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <img src="skills/git.jpg" alt="Git Logo" class="img-fluid">
+                    <p>Git</p>
+                </div>
+                <div class="skill-item">
+                    <img src="skills/github.jpg" alt="GitHub Logo" class="img-fluid">
+                    <p>GitHub</p>
+                </div>
+                <div class="skill-item">
+                    <img src="skills/linux.jpg" alt="Linux Logo" class="img-fluid">
+                    <p>Linux</p>
+                </div>
+                <div class="skill-item">
+                    <img src="skills/aws.jpg" alt="AWS Logo" class="img-fluid">
+                    <p>AWS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="about" class="text-center py-5">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="tanup.jpg" alt="Profile Photo" class="profile-photo">
+                <div class="about-text">
+                    <p class="intro">I am a passionate web developer with expertise in designing and deploying websites on AWS EC2 instances.</p>
+                    <p>If you're looking to create a website, I can help you bring your online presence to life using HTML, CSS, and other technologies.</p>
+                    <p>Feel free to explore my skills and projects or contact me directly for website development services tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="text-center py-5">
+        <div class="container">
+        <h2>Contact Us</h2>
+            <p>Email: tanunagar64@gmail.com | shezu30@gmail.com<br>
+            +91 6266481591 | +91 9999828031</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/meri_website234_/" target="_blank">
+                <img src="logo/instagram.jpg" alt="Instagram Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/tannu-nagar/" target="_blank">
+                <img src="logo/linkdin.jpg" alt="LinkedIn Logo">
+            </a>
+            <a href="https://www.youtube.com/channel/UCpxD0MZbXOAm0WSQorzAchQ" target="_blank">
+                <img src="logo/youtube.jpg" alt="YouTube Logo">
+            </a>
+        </div>
+    </div>
+
+    </section>
+
+     <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
