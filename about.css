@@ -1,0 +1,287 @@
+/* nav.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Black background for the entire body */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #4b0776; /* Dark background for the navbar */
+}
+
+.navbar-brand {
+    color: white; /* White color for the brand text */
+    font-size: 1.5rem; /* Slightly larger font size for the brand */
+    font-weight: bold; /* Bold font weight for the brand */
+}
+
+.navbar-brand:hover {
+    color: white; /* Slightly lighter color on hover */
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #ffffff; /* White color for the nav links */
+    font-size: 1.1rem; /* Slightly larger font size for the links */
+    margin-right: 1rem; /* Margin between links */
+}
+
+.nav-link:hover {
+    color: #d4d4d5; /* Slightly lighter color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.nav-item.active .nav-link {
+    color: white; /* Highlight color for the active link */
+    font-weight: bold; /* Bold font weight for the active link */
+    text-decoration: none; /* No underline for the active link */
+}
+
+/* Navbar Toggler Styles */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2); /* Transparent border */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Navbar Collapse Styles */
+.collapse.navbar-collapse {
+    justify-content: flex-end; /* Align nav items to the right */
+}
+
+@media (max-width: 992px) {
+    .nav-link {
+
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        margin-right: 0; /* Remove margin on smaller screens */
+        padding: 0.5rem 1rem; /* Add padding for better touch target */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.25rem; /* Adjust brand font size for smaller screens */
+
+    }
+}
+
+
+
+/*===================*/
+/* General Header Styling */
+header {
+    background-color: black; /* Dark background color */
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden; /* Hide overflow for pseudo-element */
+}
+
+header::before {
+    content: ''; /* Pseudo-element for decoration */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #6a0dad, #ff00cc); /* Gradient background */
+    z-index: -1;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+header:hover::before {
+    opacity: 0.5; /* Increased opacity on hover */
+}
+
+header h1 {
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 2.2;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+header .subtitle {
+    color: purple; /* Light text color */
+    font-size: 1.5rem;
+    font-weight: normal;
+    display: block;
+    margin-top: 2rem;
+}
+
+header .btn-download {
+    display: inline-block;
+    background-color: #6a0dad; /* Purple background color */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header .btn-download:hover {
+    background-color: #4b0784; /* Darker purple on hover */
+    transform: translateY(-2px); /* Move button up slightly on hover */
+}
+
+header .img-fluid {
+    max-width: 80%; /* Adjust image size as needed */
+    border-radius: 50%; /* Rounded shape for circular image */
+    filter: drop-shadow(0 4px 4px rgba(255, 255, 255, 0.8)); /* White drop shadow */
+    transition: transform 0.3s ease, filter 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+    border: 4px solid white; /* White border around the image */
+    box-sizing: border-box; /* Ensures border width is included in max-width calculation */
+}
+
+header .img-fluid:hover {
+    transform: scale(1.1); /* Scale image on hover */
+    filter: drop-shadow(0 6px 6px rgba(255, 255, 255, 0.8)); /* Increase shadow size on hover */
+
+}
+
+
+/* Skills Section */
+#skills {
+    color: white; /* White text color */
+    padding: 4rem 0; /* Top and bottom padding */
+}
+
+#skills h2 {
+    font-size: 2.5rem; /* Section title font size */
+    font-weight: 600; /* Section title font weight */
+    margin-bottom: 3rem; /* Bottom margin */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid columns */
+    gap: 2rem; /* Gap between grid items */
+    justify-items: center; /* Center items horizontally */
+}
+
+.skill-item {
+    text-align: center; /* Center text within each skill item */
+    padding: 1rem; /* Padding inside each skill item */
+    background-color: #ffffff; /* White background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.skill-item:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.skill-item img {
+    max-width: 100px; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem; /* Bottom margin for image */
+}
+
+.skill-item p {
+    font-size: 1.2rem; /* Paragraph font size */
+    font-weight: 500; /* Paragraph font weight */
+    color: black; /* Text color */
+
+}
+
+
+/* About Section */
+#about {
+    background-color: black; /* Black background color */
+    color: white; /* White text color */
+    padding: 4rem 0; /* Top and bottom padding */
+}
+
+#about h2 {
+    font-size: 2.5rem; /* Section title font size */
+    font-weight: 600; /* Section title font weight */
+    margin-bottom: 3rem; /* Bottom margin */
+}
+
+.about-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-wrap: wrap; /* Wrap content to new line if needed */
+}
+
+.profile-photo {
+    width: 150px; /* Profile photo width */
+    height: 150px; /* Profile photo height */
+    border-radius: 50%; /* Rounded corners for profile photo */
+    margin-right: 2rem; /* Right margin for spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.about-text {
+    flex: 1; /* Take remaining space */
+    max-width: 600px; /* Maximum width for text content */
+    text-align: left; /* Align text to the left */
+}
+
+.intro {
+    font-size: 1.2rem; /* Introduction paragraph font size */
+    font-weight: 500; /* Introduction paragraph font weight */
+    color: #6c757d; /* Text color */
+    margin-bottom: 1.5rem; /* Bottom margin */
+}
+
+.about-text p {
+    font-size: 1.1rem; /* Paragraph font size */
+    line-height: 1.8; /* Paragraph line height */
+    color: white; /* Text color */
+    margin-bottom: 1.5rem; /* Bottom margin */
+}
+
+/* Contact Section */
+#contact {
+    background-color: black; /* Black background color */
+    color: white; /* White text color */
+    padding: 4rem 0; /* Top and bottom padding */
+}
+
+#contact h2 {
+    font-size: 2.5rem; /* Section title font size */
+    font-weight: 600; /* Section title font weight */
+    margin-bottom: 3rem; /* Bottom margin */
+}
+
+#contact p {
+    font-size: 1.1rem; /* Paragraph font size */
+    line-height: 1.8; /* Paragraph line height */
+    color: white; /* Text color */
+    margin-bottom: 2rem; /* Bottom margin */
+}
+
+.social-links {
+    margin-top: 2rem; /* Top margin for social links */
+}
+
+.social-links a {
+    display: inline-block; /* Display links inline */
+    margin: 0 1rem; /* Margin between links */
+}
+
+.social-links img {
+    width: 40px; /* Social media icon width */
+    height: 40px; /* Social media icon height */
+    border-radius: 50%; /* Rounded corners for icon */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}

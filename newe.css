@@ -1,0 +1,140 @@
+/* Reset and base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: black; /* Set background to black */
+    color: white; /* Set text color to white for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    margin-bottom: 0;
+    background-color: #333; /* Dark background for the navbar */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem; /* Adjust navbar brand font size */
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem; /* Adjust navbar links font size */
+    color: white;
+}
+
+/* Header styles */
+#home {
+    background-color: black; /* Change header background to black */
+    color: #fff; /* Text color for header */
+    padding: 100px 0; /* Increased padding for better spacing */
+    text-align: center;
+}
+
+#home h1.lead {
+    color: #66cdaa; /* Light sea green text color */
+    font-size: 2.5rem; /* Adjust font size as needed */
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+#home h2 {
+    color: #ff8c00; /* Orange text color */
+    font-size: 2rem; /* Adjust font size as needed */
+    font-style: italic; /* Italicize the text */
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#home .btn-download {
+    display: inline-block;
+    background-color: #ff8c00; /* Orange background color */
+    color: #fff; /* White text color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px; /* Adjust margin as needed */
+    transition: background-color 0.3s ease-in-out;
+}
+
+#home .btn-download:hover {
+    background-color: #ff6f00; /* Darker orange on hover */
+}
+
+#home .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #fff; /* White border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+}
+
+#home .img-fluid:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); /* Larger shadow on hover */
+}
+
+/* Section styles (if applicable) */
+section {
+    background-color: black; /* Darker background color for sections */
+    color: white; /* Text color for sections */
+    padding: 100px 0; /* Increased padding for better spacing */
+    text-align: center;
+}
+
+section h2 {
+    font-size: 3rem; /* Larger font size for section headings */
+    margin-bottom: 30px;
+    position: relative; /* Ensure relative positioning for absolute elements */
+    color: #ff8c10; /* Initial color (orange as an example) */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ff8c00; /* Line under the text */
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0); /* Initially hidden */
+    transition: transform 0.3s ease-in-out;
+}
+
+section h2:hover {
+    color: #66cdaa; /* Change text color on hover (light sea green as an example) */
+}
+
+section h2:hover::after {
+    transform: scaleX(1); /* Show line under the text on hover */
+}
+
+/* Media queries (if applicable) */
+@media (max-width: 768px) {
+    #home {
+        padding: 80px 0; /* Adjusted header padding for smaller screens */
+    }
+
+    #home h1.lead {
+        font-size: 2rem; /* Adjusted font size for h1 on smaller screens */
+    }
+
+    #home h2 {
+        font-size: 1.8rem; /* Adjusted font size for h2 on smaller screens */
+    }
+
+    section {
+        padding: 80px 0; /* Adjusted section padding for smaller screens */
+    }
+
+    section h2 {
+        font-size: 2.5rem; /* Adjusted font size for section headings on smaller screens */
+    }
+}

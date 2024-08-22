@@ -1,0 +1,40 @@
+/* contact.css */
+
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 4rem 0; /* Top and bottom padding */
+}
+
+#contact h2 {
+    font-size: 2.5rem; /* Section title font size */
+    font-weight: 600; /* Section title font weight */
+    margin-bottom: 3rem; /* Bottom margin */
+}
+
+#contact p {
+    font-size: 1.1rem; /* Paragraph font size */
+    line-height: 1.8; /* Paragraph line height */
+    color: #6c757d; /* Text color */
+    margin-bottom: 2rem; /* Bottom margin */
+}
+
+.social-links {
+    margin-top: 2rem; /* Top margin for social links */
+}
+
+.social-links a {
+    display: inline-block; /* Display links inline */
+    margin: 0 1rem; /* Margin between links */
+}
+
+.social-links img {
+    width: 40px; /* Social media icon width */
+    height: 40px; /* Social media icon height */
+    border-radius: 50%; /* Rounded corners for icon */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}

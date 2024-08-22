@@ -1,5 +1,3 @@
-/* nav.css */
-
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -10,11 +8,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #4b0776; /* Dark background for the navbar */
-    position: fixed; /* Fixed position for the navbar */
-    width: 100%; /* Full width */
-    top: 0; /* Stick to the top */
-    z-index: 1000; /* Ensure it's above other content */
+    background-color: #4b0784; /* Dark background for the navbar */
 }
 
 .navbar-brand {
@@ -24,12 +18,11 @@ body {
 }
 
 .navbar-brand:hover {
-    color: white; /* Slightly lighter color on hover */
-    font-weight: bold;
+    color: white; /* Maintain white color on hover */
 }
 
 .nav-link {
-    color: #ffffff; /* White color for the nav links */
+    color: white; /* White color for the nav links */
     font-size: 1.1rem; /* Slightly larger font size for the links */
     margin-right: 1rem; /* Margin between links */
 }
@@ -40,7 +33,7 @@ body {
 }
 
 .nav-item.active .nav-link {
-    color: #ffcc00; /* Highlight color for the active link */
+    color: white; /* Highlight color for the active link */
     font-weight: bold; /* Bold font weight for the active link */
     text-decoration: none; /* No underline for the active link */
 }
@@ -71,13 +64,4 @@ body {
     .navbar-brand {
         font-size: 1.25rem; /* Adjust brand font size for smaller screens */
     }
-}
-
-/* Section Styles */
-section {
-    padding: 4rem 0; /* Top and bottom padding for sections */
-}
-
-header {
-    padding: 6rem 0;
 }
